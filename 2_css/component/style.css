@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600&display=swap");
+
+:root {
+   --primary: #2cd1ee;
+   --secondary: #707070;
+   --light: #ffffff;
+   --dark: #000000;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: "PT Serif", serif;
+   font-family: "Quicksand", sans-serif;
+}
+
+.icon {
+   width: 60px;
+   height: 60px;
+}
+
+.top-section {
+   width: 800px;
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.icon-container {
+   display: flex;
+   align-items: center;
+}
+.icon-text {
+   color: var(--secondary);
+   font-size: 28px;
+   margin-left: 13px;
+   font-weight: 600;
+}
+.output {
+   color: var(--secondary);
+   font-size: 38px;
+   font-weight: 500;
+}
+
+.seperator {
+   width: 800px;
+   height: 2px;
+   margin: 20px 0px;
+   background-color: rgba(95, 95, 95, 0.64);
+}
+
+.middle-section {
+   width: 800px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+label {
+   display: block;
+   font-weight: 500;
+   font-size: 19px;
+   margin-bottom: 3px;
+}
+
+.input-container {
+   width: 70%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#input {
+   border: 1px solid var(--secondary);
+   text-align: end;
+   outline: none;
+   padding: 3px 10px;
+   border-radius: 5px;
+}
+
+#from {
+   width: 100px;
+   border: 1px solid var(--secondary);
+   outline: none;
+   padding: 3px 6px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+#to {
+   width: 100px;
+   border: 1px solid var(--secondary);
+   outline: none;
+   padding: 3px 6px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.calculator {
+   margin-top: 23px;
+   font-family: "PT Serif", serif;
+   font-family: "Quicksand", sans-serif;
+   font-size: 16px;
+   box-shadow: none;
+   padding: 10px 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+.table-section {
+   width: 800px;
+   margin-top: 30px;
+   height: 350px;
+   overflow: scroll;
+}
+
+#table {
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+#table td,
+#table th {
+   border: 1px solid #ddd;
+   padding: 8px;
+}
+
+#table tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+#table th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: var(--primary);
+   color: white;
+}

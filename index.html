@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="2_css/css_library/MDB-5/css/mdb.min.css" />
+      <!-- Components -->
+      <link rel="stylesheet" href="2_css/component/style.css" />
+      <title>Document</title>
+   </head>
+
+   <body>
+      <section class="top-section">
+         <div class="icon-container">
+            <img src="__data/images/logo.png" class="icon" alt="" />
+            <div class="icon-text">TwoMen</div>
+         </div>
+         <div class="output">00.0</div>
+      </section>
+      <div class="seperator"></div>
+      <form class="middle-section" id="form">
+         <div class="input-container">
+            <div class="enter-container">
+               <label for="input">Input</label>
+               <input
+                  type="number"
+                  placeholder="0.00"
+                  autofocus
+                  min="1"
+                  required
+                  class="input"
+                  id="input"
+               />
+            </div>
+            <div class="from-container">
+               <label for="from">From</label>
+               <select id="from" required></select>
+            </div>
+            <div class="to-container">
+               <label for="to">Top</label>
+               <select id="to" required></select>
+            </div>
+         </div>
+         <div class="calculate-container">
+            <button class="calculator btn-info btn">Calculate</button>
+         </div>
+      </form>
+      <section class="table-section">
+         <table id="table">
+            <tr>
+               <th>Date</th>
+               <th>From</th>
+               <th>To</th>
+            </tr>
+         </table>
+      </section>
+   </body>
+
+   <!-- MDB -->
+   <script src="2_css/css_library/MDB-5/js/mdb.min.js"></script>
+   <script type="text/javascript" src="3_javascript/data.js"></script>
+   <script type="text/javascript" src="3_javascript/app.js"></script>
+</html>
